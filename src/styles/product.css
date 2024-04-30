@@ -1,0 +1,69 @@
+#product {
+        min-height: calc(100vh - 91px);
+        max-width: auto;
+        margin: 0 auto;
+        position: relative;
+} 
+
+.product {
+    padding: 20px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.title-product {
+        font-size: 60px;
+        text-align: center;
+        max-width: 600px; /* Defina o valor máximo de largura que deseja para o <h1> */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+    
+.description-product {
+        font-size: 18px;
+        text-align: center;
+        max-width: 500px; /* Defina o valor máximo de largura que deseja para o <p> */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding-bottom: 20px;
+        margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+        overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px; /* Espaçamento entre as seções */
+}
+
+.content {
+    flex: 1;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    /*margin-right: 136px; /* Espaçamento entre as imagens/textos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.content img {
+    max-width: 70%;
+    height: auto;
+    /* border-radius: 5px; */
+    margin-bottom: 20px; /* Espaçamento abaixo das imagens */
+}
+
+.content h2 {
+    max-width: 350px; /* Defina o valor máximo de largura que deseja para o <h2> */
+    word-wrap: break-word; /* Quebra de palavra automática */
+    white-space: normal; /* Permite que o texto seja quebrado em várias linhas */
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 10px; /* Espaçamento abaixo dos parágrafos */
+    overflow-wrap: break-word; /* Quebra de palavra automática */
+    text-align: justify; /* Justifica o texto */
+    text-justify: inter-word;
+    display: inline-block; /* Transforma o elemento em bloco inline */
+    max-width: 384px; /* Defina o valor máximo de largura que deseja para o <p> */
+}
