@@ -1,0 +1,114 @@
+#comment {
+    min-height: calc(100vh - 91px);
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    /* max-width: 800px; */
+    position: relative;
+} 
+
+.title-comment {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 600px; /* Defina o valor máximo de largura que deseja para o <h1> */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+    
+.description-comment {
+    font-size: 18px;
+    text-align: center;
+    max-width: 500px; /* Defina o valor máximo de largura que deseja para o <p> */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding-bottom: 20px;
+    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+    overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+
+.white-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Garante que os botões estejam acima dos slides */
+}
+
+.prev-btn {
+    left: 10px; /* Ajusta a posição do botão da esquerda */
+}
+
+.next-btn {
+    right: 10px; /* Ajusta a posição do botão da direita */
+}
+
+/*.comment-carousel {
+    width: 100%; 
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+}*/
+
+.comment-carousel {
+    width: calc(100% + 32px); /* Adiciona espaço extra para a margem direita do último slide */
+    display: flex;
+}
+
+
+.slide:last-child {
+    margin-right: 0; 
+}
+
+/*.slide {
+    width: 384px;
+    height: 100%;
+    display: inline-block; 
+    margin-right: 32px; 
+}*/
+
+.slide {
+    width: 50%;
+    margin-right: 32px;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave ao mover os slides */
+}
+
+
+.content {
+    width: 100%;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #000; /* Cor do exemplo para o ícone */
+    border-radius: 50%;
+    margin-bottom: 5px; /* Espaçamento entre o ícone e o nome */
+}
+
+.user-name {
+    font-size: 16px;
+}
+

@@ -1,0 +1,80 @@
+#about {
+    min-height: calc(100vh - 91px);
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    /* max-width: 800px; */
+    position: relative;
+} 
+
+.title-about {
+    font-size: 60px;
+    text-align: center;
+    max-width: 600px; /* Defina o valor máximo de largura que deseja para o <h1> */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+    
+.description-about {
+    font-size: 18px;
+    text-align: center;
+    max-width: 500px; /* Defina o valor máximo de largura que deseja para o <p> */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding-bottom: 20px;
+    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+    overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    max-width: 850px; /* Define o máximo de largura para caber apenas dois box por linha */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+    
+.box {
+    width: 384px;
+    height: 246px;
+    margin-right: 32px;
+    margin-bottom: 32px; /* Adiciona espaçamento entre as caixas */
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Adiciona empilhamento vertical */
+    align-items: center;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    background-color: black; /* Cor de exemplo para o círculo */
+    border-radius: 50%;
+    margin-top: 16px;
+    margin-bottom: 20px; /* Margem inferior ajustada */
+    display: flex;
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+}
+
+.content {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .about {
+        flex-direction: column; /* Altera o layout para empilhamento vertical */
+        align-items: center; /* Centraliza os elementos verticalmente */
+    }
+
+    .box {
+        margin-right: 0; /* Remove a margem direita */
+        margin-bottom: 32px; /* Adiciona espaçamento entre as caixas */
+    }
+}
