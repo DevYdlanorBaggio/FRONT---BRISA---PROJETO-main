@@ -3,7 +3,6 @@
     padding: 20px;
     margin: 0 auto;
     width: 80%;
-    /* max-width: 800px; */
     position: relative;
 } 
 
@@ -28,8 +27,17 @@
 
 .white-box {
     position: relative;
-    overflow: hidden;
+    width: 960px; /* largura desejada */
+    height: 372px; /* altura desejada */
+    overflow: hidden; /* impede que o conteúdo ultrapasse as dimensões definidas */
+    background-color: #fff; /* Adiciona o fundo branco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 80px; /* Adiciona 80px de padding nas laterais */
+    display: flex; /* Ativa o layout flexivel */
+    justify-content: space-between; /* Distribui os slides uniformemente */
+    align-items: center; /*Centraliza os itens ao longo do eixo transversal (verticalmente)*/
 }
+
 
 .prev-btn,
 .next-btn {
@@ -55,47 +63,37 @@
     right: 10px; /* Ajusta a posição do botão da direita */
 }
 
-/*.comment-carousel {
+.comment-carousel {
     width: 100%; 
     overflow: hidden; 
     position: relative;
     display: flex;
-}*/
-
-.comment-carousel {
-    width: calc(100% + 32px); /* Adiciona espaço extra para a margem direita do último slide */
-    display: flex;
 }
 
+.slide {
+    width: 384px;
+    height: 372px; /* Mantém a altura original */
+    /* margin: 0 auto; */
+    margin-right: 32px; /* Adiciona espaçamento entre os slides */
+}
 
+/* Remova a margem direita do último slide para evitar espaçamento extra */
 .slide:last-child {
     margin-right: 0; 
 }
 
-/*.slide {
-    width: 384px;
-    height: 100%;
-    display: inline-block; 
-    margin-right: 32px; 
-}*/
 
-.slide {
-    width: 50%;
-    margin-right: 32px;
-    transition: transform 0.5s ease; /* Adiciona uma transição suave ao mover os slides */
-}
-
-
-.content {
-    width: 100%;
+.comment-text {
+    width: 384px; /* O conteúdo de cada slide ocupa toda a largura do slide */
+    height: 372px;
     padding: 20px;
-    background-color: #f3f4f6;
-    border-radius: 6px;
+    background-color: #f3f4f6; /* Cor de fundo para destacar o conteúdo */
+    border-radius: 6px; /* Adiciona bordas arredondadas */
 }
 
 .user-info {
     display: flex;
-    flex-direction: column; /* Alinha os elementos em coluna */
+    flex-direction: column; /* Coloca os elementos em coluna */
     align-items: center; /* Centraliza os elementos horizontalmente */
     text-align: center; /* Centraliza o texto */
 }
@@ -105,7 +103,7 @@
     height: 50px;
     background-color: #000; /* Cor do exemplo para o ícone */
     border-radius: 50%;
-    margin-bottom: 5px; /* Espaçamento entre o ícone e o nome */
+    margin-top: 5px; /* Espaçamento entre o nome e o ícone */
 }
 
 .user-name {

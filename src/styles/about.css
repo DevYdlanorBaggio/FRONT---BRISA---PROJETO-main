@@ -38,35 +38,36 @@
     width: 384px;
     height: 246px;
     margin-right: 32px;
-    margin-bottom: 32px; /* Adiciona espaçamento entre as caixas */
+    margin-bottom: 32px;
     background-color: #fff;
     border-radius: 8px;
     display: flex;
-    flex-direction: column; /* Adiciona empilhamento vertical */
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza horizontalmente os itens */
 }
 
 .circle {
     width: 75px;
     height: 75px;
-    background-color: black; /* Cor de exemplo para o círculo */
+    background-color: black;
     border-radius: 50%;
     margin-top: 16px;
-    margin-bottom: 20px; /* Margem inferior ajustada */
+    margin-bottom: 20px;
     display: flex;
-    justify-content: center; /* Centraliza o ícone horizontalmente */
-    align-items: center; /* Centraliza o ícone verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
-.content {
-    text-align: center; /* Centraliza o conteúdo */
+.text-about p {
+    text-align: center;
 }
 
 h3 {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
-
 @media (max-width: 900px) {
     .about {
         flex-direction: column; /* Altera o layout para empilhamento vertical */

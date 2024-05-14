@@ -1,0 +1,77 @@
+#faq {
+    min-height: calc(100vh - 91px);
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    /* display: flex; */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que as caixas se ajustem horizontalmente */
+} 
+
+.title-comment {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 600px; /* Defina o valor máximo de largura que deseja para o <h1> */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+    
+.description-comment {
+    font-size: 18px;
+    text-align: center;
+    max-width: 500px; /* Defina o valor máximo de largura que deseja para o <p> */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding-bottom: 20px;
+    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+    overflow-wrap: break-word; /* Quebra de palavra automática */
+}
+
+.boxfaq {
+    position: relative;
+    max-width: 800px;
+    
+    /* align-items: center; */
+}
+
+.boxfaq .contentbox {
+    position: relative;
+    margin: 10px 20px;
+}
+.boxfaq .contentbox .label {
+    border: solid 1px #E5E7EB;
+    position: relative;
+    padding: 10px;
+    background: #F3F4F6;
+    cursor: pointer;
+}
+
+.boxfaq .contentbox.active .label::before{
+    content: 'v' ;
+}
+
+.boxfaq .contentbox .label::before {
+    content: '^';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    border: solid 1px #E5E7EB;
+}
+
+.boxfaq .contentbox .subject {
+    position: relative;
+    /* padding: 10px; */
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.boxfaq .contentbox.active .subject {
+    height: auto;
+    padding: 10px
+}
