@@ -8,13 +8,30 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
 }
 
 .logo {
-    /* Estilos para o logo */
+    margin-right: 10px; /* Adiciona um espaçamento entre a logo e o texto */
+}
+
+.logo img {
+    width: 82px; /* Define o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.logo-text {
+    font-size: 18px; /* Define o tamanho da fonte do texto */
+}
+
+.logo-text-top {
+    font-weight: bold; /* Torna o texto superior em negrito */
+}
+
+.logo-text-bottom {
+    color: #fff; /* Define uma cor mais suave para o texto inferior */
+    margin-top: -5px; /* Ajusta o espaçamento entre os textos */
 }
 
 nav ul {

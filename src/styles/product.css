@@ -1,16 +1,27 @@
 #product {
     min-height: calc(100vh - 91px);
     padding: 20px;
-    margin: 0 auto;
-    width: 80%;
-    /* max-width: 800px; */
-    position: relative;
-} 
-
-.product {
-    padding: 20px;
     margin: 0 auto; /* Centraliza horizontalmente */
+    width: 80%;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
 }
+
+#product .title-product {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#product .description-product {
+    font-size: 18px;
+    margin-bottom: 20px; 
+}
+
+#product img {
+    width: 590px;
+    height: 425px;
+    margin-right: 138px;
+}
+
 
 .title-product {
     font-size: 60px;
@@ -37,33 +48,38 @@
     margin-bottom: 40px; /* Espaçamento entre as seções */
 }
 
-.content-left {
+ .content-left {
     flex: 1;
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin-right: 136px; /* Espaçamento entre as imagens/textos */
+    text-align: center; 
+    width: auto;
+    /* margin-right: 136px;  */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
 }
 
 .content-right {
     flex: 1;
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin-left: 136px; /* Espaçamento entre as imagens/textos */
+    text-align: center; 
+    /* margin-left: 136px;  */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
 }
 
 .content-right img {
-    max-width: 70%;
+    text-align: center; 
+    justify-content: center; 
     height: auto;
+    max-width: 70%;
     margin-bottom: 20px; /* Espaçamento abaixo das imagens */
 }
 
 .content-left img {
-    max-width: 70%;
+    text-align: center; 
+    justify-content: center; 
     height: auto;
+    max-width: 70%;
     margin-bottom: 20px; /* Espaçamento abaixo das imagens */
 }
 

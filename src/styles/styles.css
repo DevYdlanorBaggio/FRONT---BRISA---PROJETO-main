@@ -29,9 +29,23 @@ section{
   transition: background-color .3s ease;
 }
 
+/* .btn-default {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+} */
+
 .btn-default:hover{
   background-color: #095B4E;
 }
+
+/* .btn-default:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+} */
 
 .social-media-buttons {
   display: flex;

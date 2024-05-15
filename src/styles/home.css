@@ -10,7 +10,6 @@
     align-items: center; /* Centraliza verticalmente os itens */
 } 
 
-
 #cta {
     flex: 1; /* Ocupa todo o espaço disponível restante */
     text-align: left; /* Alinha o texto à esquerda */
