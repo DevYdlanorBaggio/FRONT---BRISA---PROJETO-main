@@ -4,9 +4,6 @@
     margin: 0 auto;
     width: 80%;
     position: relative;
-    /* display: flex; */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    flex-wrap: wrap; /* Permite que as caixas se ajustem horizontalmente */
 } 
 
 .title-comment {
@@ -28,21 +25,26 @@
     overflow-wrap: break-word; /* Quebra de palavra automática */
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Adiciona esta linha */
+    align-items: center; /* Opcional: alinha os itens horizontalmente no centro */
+}
+
 .boxfaq {
-    position: relative;
     max-width: 800px;
-    
-    /* align-items: center; */
 }
 
 .boxfaq .contentbox {
-    position: relative;
+    /* position: relative; */
     margin: 10px 20px;
 }
 .boxfaq .contentbox .label {
     border: solid 1px #E5E7EB;
     position: relative;
     padding: 10px;
+    padding-top: 10px;
     background: #F3F4F6;
     cursor: pointer;
 }
@@ -54,8 +56,8 @@
 .boxfaq .contentbox .label::before {
     content: '^';
     position: absolute;
-    top: 50%;
-    right: 20px;
+    /* top: 10px; */
+    /* right: -10px; */
     transform: translateY(-50%);
     font-size: 1.5em;
     border: solid 1px #E5E7EB;
