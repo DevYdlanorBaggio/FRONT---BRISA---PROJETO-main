@@ -1,65 +1,92 @@
 footer {
     background-color: #095b4e; /* Cor de fundo do footer */
-    height: 327px; /* Altura do footer */
-    width: 100%; /* Largura total */
+    padding: 80px 0; /* Espaçamento vertical */
     color: #fff; /* Cor do texto */
-    text-align: center; /* Alinhamento do texto */
+    position: relative; /* Permite posicionar o border superior */
+}
+
+/* Adiciona o border superior */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%; /* Posiciona o border na metade do footer */
+    transform: translateX(-50%); /* Move o border para a esquerda */
+    width: calc(100% - 40%); /* Define a largura do border */
+    max-width: 1060px; /* Limita a largura máxima do border */
+    height: 1px; /* Espessura do border */
+    background-color: #fff; /* Cor do border */
+    margin-top: 65px; /* Distância entre o border e o topo do footer */
 }
 
 .footer-content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 30px; /* Ajusta a posição vertical do footer */
 }
 
 .logo {
-    margin-right: 10px; /* Adiciona um espaçamento entre a logo e o texto */
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     width: 82px; /* Define o tamanho da imagem */
     height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Adiciona espaçamento entre a imagem e o texto */
 }
 
 .logo-text {
     font-size: 18px; /* Define o tamanho da fonte do texto */
 }
 
-.logo-text-top {
-    font-weight: bold; /* Torna o texto superior em negrito */
-}
 
 .logo-text-bottom {
     color: #fff; /* Define uma cor mais suave para o texto inferior */
-    margin-top: -5px; /* Ajusta o espaçamento entre os textos */
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.footcenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0; /* Padding top e bottom de 80px e padding left e right automáticos */
+    position: relative; /* Adiciona posição relativa para posicionar o ::before */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.footcenter a {
+    color: #fff; /* Define a cor dos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.footcenter a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.footcenter ul {
+    padding: 0; /* Remove o padding padrão da lista */
+}
+
+.footcenter li {
+    display: inline-block; /* Exibe os itens da lista em linha */
+    margin-right: 20px; /* Adiciona espaçamento entre os itens */
 }
 
 .social-icons {
-    /* Estilos para os ícones sociais */
+    margin-top: 20px; /* Adiciona espaçamento entre o nav e as redes sociais */
 }
 
 .social-icons a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
+    color: #fff; /* Define a cor dos ícones */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    margin-right: 10px; /* Adiciona espaçamento entre os ícones */
 }
 
 .copyright {
-    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Garante que a largura seja 100% */
+    text-align: center; /* Alinha o texto ao centro */
 }
