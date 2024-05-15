@@ -36,10 +36,6 @@
     max-width: 800px;
 }
 
-.boxfaq .contentbox {
-    /* position: relative; */
-    margin: 10px 20px;
-}
 .boxfaq .contentbox .label {
     border: solid 1px #E5E7EB;
     position: relative;
@@ -53,30 +49,21 @@
     content: 'v' ;
 }
 
+.label{
+    font-weight: bold;
+}
+
 .boxfaq .contentbox .label::before {
     content: '^';
     position: absolute;
-    right: 5px; /* Afasta o sinal 5px do canto direito */
-    /* top: 10px; */
+    right: 8px;
     bottom: -12px;
     transform: translateY(-50%);
     font-size: 1.5em;
-
 }
-
-/*.boxfaq .contentbox .label::before {
-    content: '^';
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-    border: solid 1px #E5E7EB;
-}*/
 
 .boxfaq .contentbox .subject {
     position: relative;
-    /* padding: 10px; */
     background: #fff;
     height: 0;
     overflow: hidden;
